@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading.Channels;
 
 namespace MakeChange
 {
@@ -15,7 +16,29 @@ namespace MakeChange
         */
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            //ask for bill amount
+            Console.Write("Please enter amount billed: ");
+            //create varialbe for amount entered
+            string amountEntered = "";
+            amountEntered = Console.ReadLine();
+            decimal enteredConversion = decimal.Parse(amountEntered);
+            Console.WriteLine($"Your total Bill is: {enteredConversion:C2}");
+
+            //ask for amount tendered
+            Console.Write("Please enter amount tendered: ");
+            //create variable for amount entered
+            string amountTendered = "";
+            amountTendered = Console.ReadLine();
+            decimal tenderedConversion = decimal.Parse(amountTendered);
+            Console.WriteLine($"The amount tendered is: {tenderedConversion:C2}");
+
+            //create code for conversion
+            decimal changeRequired = tenderedConversion - enteredConversion;
+            
+            // change amount = amount tendered - amount owed
+            
+            //print change required
+            Console.WriteLine($"Your change due is: {changeRequired:C2}");
         }
     }
 }
