@@ -16,6 +16,8 @@ namespace MakeChange
         */
         static void Main(string[] args)
         {
+            Console.WriteLine(" -* Calculating Change... For Dummies v0.0.2 *-  ");
+            Console.WriteLine();
             //ask for bill amount
             Console.Write("Please enter amount billed: ");
             //create varialbe for amount entered
@@ -30,6 +32,12 @@ namespace MakeChange
             string amountTendered = "";
             amountTendered = Console.ReadLine();
             decimal tenderedConversion = decimal.Parse(amountTendered);
+            while(tenderedConversion < enteredConversion)
+            {
+                Console.Write("Stealing is bad, Please pay full amount... ");
+                amountTendered = Console.ReadLine();
+                tenderedConversion = decimal.Parse(amountTendered);
+            }
             Console.WriteLine($"The amount tendered is: {tenderedConversion:C2}");
 
             //create code for conversion
