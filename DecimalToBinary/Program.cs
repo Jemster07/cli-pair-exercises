@@ -6,7 +6,7 @@ namespace DecimalToBinary
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("*** Decimal to Binary Converter vers. 0.0.4 ***");
+            Console.WriteLine("*** Decimal to Binary Converter vers. 0.0.3 ***");
             Console.WriteLine();
             Console.Write("Enter a series of decimal values (separated by spaces): ");
 
@@ -40,8 +40,9 @@ namespace DecimalToBinary
                 }
 
                 Console.WriteLine($"{inputValues[i]} in binary is {binaryString}.");
-
             }
+            
+            return;
         }
     }
 }
