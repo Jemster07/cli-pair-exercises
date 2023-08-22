@@ -54,6 +54,8 @@ namespace MartianWeight
                 Console.WriteLine($"{earthWeight[i]} lbs. on Earth is {convertedWeight[i]} lbs. on Mars.");
             }
 
+            Console.ReadKey(true);
+
             return;
         }
     }

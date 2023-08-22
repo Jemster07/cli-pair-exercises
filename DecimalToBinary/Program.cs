@@ -41,7 +41,9 @@ namespace DecimalToBinary
 
                 Console.WriteLine($"{inputValues[i]} in binary is {binaryString}.");
             }
-            
+
+            Console.ReadKey(true);
+
             return;
         }
     }

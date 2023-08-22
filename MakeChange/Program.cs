@@ -47,6 +47,10 @@ namespace MakeChange
             
             //print change required
             Console.WriteLine($"Your change due is: {changeRequired:C2}");
+
+            Console.ReadKey(true);
+
+            return;
         }
     }
 }
